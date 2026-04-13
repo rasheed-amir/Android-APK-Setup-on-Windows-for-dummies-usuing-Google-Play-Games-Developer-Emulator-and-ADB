@@ -72,9 +72,10 @@ Notes:
 - Close it fully
 
 Inside the emulator, keyboard shortcuts are the main navigation method:
-
 - `Ctrl+B` goes back
 - `Ctrl+H` goes to the home screen
+
+From the trey, you can control the aspect ratio and the orientation of the emulator sscreen.
 
 ![Launch emulator](assets/screenshots/screenshot3.png)
 
