@@ -42,14 +42,14 @@ Create a working folder anywhere you like. In this guide, we will call it `emula
 
 ```text
 emulator-windows/
-|-- hpesuperpower-1.2.1/
-|   |-- hpesuperpower.exe
-|-- platform-tools/
-|   `-- adb.exe
-`-- apks/
-    |-- AuroraStore.apk
-    |-- app2.apk
-    |-- app3.apk
+   |-- hpesuperpower-1.2.1/
+            |   |-- hpesuperpower.exe
+   |-- platform-tools/
+               |   `-- adb.exe
+   `-- apks/
+                |-- AuroraStore.apk
+                |-- app2.apk
+                |-- app3.apk
 
 ```
 
@@ -66,12 +66,12 @@ Notes:
 - Install the emulator
 - Launch it once
 - Close it fully
-
-Inside the emulator, keyboard shortcuts are the main navigation method:
+Notes about the emulator:
+#Inside the emulator, keyboard shortcuts are the main navigation method:
 - `Ctrl+B` goes back
 - `Ctrl+H` goes to the home screen
 
-From the trey, you can control the aspect ratio and the orientation of the emulator sscreen.
+#From the trey,right click the icon then developer options,there you can control the aspect ratio and the orientation of the emulator sscreen.
 
 ![Launch emulator](assets/screenshots/screenshot3.png)
 
