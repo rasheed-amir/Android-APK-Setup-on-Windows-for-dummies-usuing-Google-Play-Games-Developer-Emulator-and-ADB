@@ -11,6 +11,8 @@ This repo turns the setup into a clean, repeatable workflow without relying on h
 - Keep the setup lightweight
 - Optionally enable root with Magisk
 
+![Overview](assets/screenshots/screenshot1.png)
+
 ## Requirements
 
 1. Google Play Games Developer Emulator
@@ -44,15 +46,15 @@ Create a working folder anywhere you like. In this guide, we will call it `emula
 
 ```text
 emulator-windows/
-├── hpesuperpower-1.2.1/
-│   ├── hpesuperpower.exe
-│   └── Magisk-v30.7.apk
-├── platform-tools/
-│   └── adb.exe
-└── apks/
-    ├── app1.apk
-    ├── AuroraStore.apk
-    └── Magisk-v30.7.apk
+|-- hpesuperpower-1.2.1/
+|   |-- hpesuperpower.exe
+|   `-- Magisk-v30.7.apk
+|-- platform-tools/
+|   `-- adb.exe
+`-- apks/
+    |-- app1.apk
+    |-- AuroraStore.apk
+    `-- Magisk-v30.7.apk
 ```
 
 Notes:
@@ -61,6 +63,8 @@ Notes:
 - Keep APKs you want to install inside `apks/` for organization.
 - You can still install APKs from any path with `adb install`.
 
+![Folder structure](assets/screenshots/screenshot2.png)
+
 ## Setup
 
 ### 1. Install Google Play Games Developer Emulator
@@ -68,6 +72,13 @@ Notes:
 - Install the emulator
 - Launch it once
 - Close it fully
+
+Inside the emulator, keyboard shortcuts are the main navigation method:
+
+- `Ctrl+B` goes back
+- `Ctrl+H` goes to the home screen
+
+![Launch emulator](assets/screenshots/screenshot3.png)
 
 If it stays running in the tray, end it before moving on.
 
@@ -84,6 +95,14 @@ If it stays running in the tray, end it before moving on.
 9. Paste the full `platform-tools` path.
 10. Click `OK` to save all dialogs.
 
+![Copy platform-tools path](assets/screenshots/screenshot4.png)
+![Open system environment variables](assets/screenshots/screenshot5.png)
+![Environment Variables button](assets/screenshots/screenshot6.png)
+![Select Path under user variables](assets/screenshots/screenshot7.png)
+![Click Edit for Path](assets/screenshots/screenshot8.png)
+![Click New in the Path editor](assets/screenshots/screenshot9.png)
+![Paste the platform-tools path](assets/screenshots/screenshot10.png)
+
 ### 3. Test ADB
 
 Open Command Prompt and run:
@@ -99,6 +118,8 @@ localhost:xxxx device
 ```
 
 If you see a connected device entry, ADB is working.
+
+![ADB devices output](assets/screenshots/screenshot11.png)
 
 ### 4. Optional Root Setup with Magisk
 
@@ -141,6 +162,8 @@ Example:
 adb install "C:\Users\YourName\Documents\emulator-windows\apks\app1.apk"
 ```
 
+![ADB install example](assets/screenshots/screenshot12.png)
+
 ### Method 2: Aurora Store
 
 Install Aurora Store with ADB:
@@ -150,6 +173,8 @@ adb install "C:\Users\YourName\Documents\emulator-windows\apks\AuroraStore.apk"
 ```
 
 Then open Aurora Store inside the emulator and sign in using the mode you prefer.
+
+![Aurora Store or installed app example](assets/screenshots/screenshot13.png)
 
 ### Method 3: Browser Inside the Emulator
 
@@ -162,6 +187,7 @@ Then open Aurora Store inside the emulator and sign in using the mode you prefer
 - The Play Store experience is limited in this environment
 - Aurora Store is usually better for daily app installs
 - ADB is the most dependable install path
+- Navigation inside the emulator is limited, so use `Ctrl+B` for Back and `Ctrl+H` for Home
 
 ## Daily Workflow
 
@@ -209,28 +235,6 @@ After setup, you will have:
 - APK installation support
 - Optional Magisk root
 - A lighter alternative to traditional emulators
-
-## Screenshots
-
-Place your screenshots in [`assets/screenshots/`](assets/screenshots).
-
-If you save them with the names below, you can simply uncomment the matching image lines and they will render on GitHub:
-
-```md
-![Overview](assets/screenshots/screenshot1.png)
-![Folder structure](assets/screenshots/screenshot2.png)
-![Launch emulator](assets/screenshots/screenshot3.png)
-![Copy platform-tools path](assets/screenshots/screenshot4.png)
-![System environment variables](assets/screenshots/screenshot5.png)
-![Environment Variables button](assets/screenshots/screenshot6.png)
-![User Path variable](assets/screenshots/screenshot7.png)
-![Edit Path](assets/screenshots/screenshot8.png)
-![Add new Path entry](assets/screenshots/screenshot9.png)
-![Paste platform-tools path](assets/screenshots/screenshot10.png)
-![ADB devices output](assets/screenshots/screenshot11.png)
-![ADB install APK](assets/screenshots/screenshot12.png)
-![Aurora Store](assets/screenshots/screenshot13.png)
-```
 
 ## Disclaimer
 
