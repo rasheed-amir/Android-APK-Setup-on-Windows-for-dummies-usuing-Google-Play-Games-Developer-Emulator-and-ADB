@@ -24,19 +24,15 @@ This repo turns the setup into a clean, repeatable workflow without relying on h
    - Launch it once
    - Close it completely afterward, including from Task Manager if needed
 
-2. Magisk APK
-   Download the latest official release:
-   [Magisk Releases](https://github.com/topjohnwu/magisk/releases)
-
-3. `hpesuperpower`
+2. `hpesuperpower`
    Download the latest release ZIP and unzip it:
    [MagiskOnGooglePlayGames Releases](https://github.com/chsbuffer/MagiskOnGooglePlayGames/releases)
 
-4. ADB platform-tools
+3. ADB platform-tools
    Download the official ZIP and unzip it:
    [Android SDK Platform-Tools](https://developer.android.com/tools/releases/platform-tools)
 
-5. Aurora Store APK (optional)
+4. Aurora Store APK (optional)
    Download the latest APK:
    [Aurora Store Releases](https://www.auroraoss.com/files/AuroraStore/Release)
 
@@ -86,12 +82,19 @@ If it stays running in the tray, end it before moving on.
 1. Launch the emulator once from the hidden taskbar icons area.
 2. Locate your `platform-tools` folder.
 3. Right-click the folder and choose `Copy as path`.
+![Copy platform-tools path](assets/screenshots/screenshot4.png)
 4. Open `Edit the system environment variables` from the Start menu.
+![Open system environment variables](assets/screenshots/screenshot5.png)
 5. Click `Environment Variables`.
+![Environment Variables button](assets/screenshots/screenshot6.png)
 6. Under `User variables`, select `Path`.
+![Select Path under user variables](assets/screenshots/screenshot7.png)
 7. Click `Edit`.
+![Click Edit for Path](assets/screenshots/screenshot8.png)
 8. Click `New`.
+![Click New in the Path editor](assets/screenshots/screenshot9.png)
 9. Paste the full `platform-tools` path.
+![Paste the platform-tools path](assets/screenshots/screenshot10.png)
 10. Click `OK` to save all dialogs.
 
 ![Copy platform-tools path](assets/screenshots/screenshot4.png)
@@ -123,9 +126,12 @@ If you see a connected device entry, ADB is working.
 ### 4. Optional Root Setup with Magisk
 
 Skip this section if you do not need root.
+1. 2. Magisk APK
+   Download the latest official release:
+   [Magisk Releases](https://github.com/topjohnwu/magisk/releases)
 
-1. Open Command Prompt as Administrator in the `hpesuperpower` folder.
-2. Change into that folder:
+2. Open Command Prompt as Administrator in the `hpesuperpower` folder.
+3. use rael hpesuperpower and Magisk version numbers insted of teh xxx in the commands:
 
 ```powershell
 cd path\to\emulator-windows\hpesuperpower-x.x.x
