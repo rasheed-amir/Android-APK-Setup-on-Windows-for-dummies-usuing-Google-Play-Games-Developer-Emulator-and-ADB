@@ -90,7 +90,7 @@ If it stays running in the tray, end it before moving on.
 9. Paste the full `platform-tools` path.
 10. Click `OK` to save all dialogs.
 
-![add adb to path](assets/screenshots/1(1).png)
+![add adb to path](assets/screenshots/adb-path-quick-reference.png)
 
 
 ### 3. Test ADB
