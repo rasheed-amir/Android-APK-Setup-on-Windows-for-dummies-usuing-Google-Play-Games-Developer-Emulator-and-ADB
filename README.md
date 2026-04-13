@@ -29,11 +29,11 @@ This repo turns the setup into a clean, repeatable workflow without relying on h
    [Magisk Releases](https://github.com/topjohnwu/magisk/releases)
 
 3. `hpesuperpower`
-   Download the latest release ZIP:
+   Download the latest release ZIP and unzip it:
    [MagiskOnGooglePlayGames Releases](https://github.com/chsbuffer/MagiskOnGooglePlayGames/releases)
 
 4. ADB platform-tools
-   Download the official ZIP:
+   Download the official ZIP and unzip it:
    [Android SDK Platform-Tools](https://developer.android.com/tools/releases/platform-tools)
 
 5. Aurora Store APK (optional)
@@ -48,20 +48,18 @@ Create a working folder anywhere you like. In this guide, we will call it `emula
 emulator-windows/
 |-- hpesuperpower-1.2.1/
 |   |-- hpesuperpower.exe
-|   `-- Magisk-v30.7.apk
 |-- platform-tools/
 |   `-- adb.exe
 `-- apks/
-    |-- app1.apk
     |-- AuroraStore.apk
-    `-- Magisk-v30.7.apk
+    |-- app2.apk
+    |-- app3.apk
+
 ```
 
 Notes:
-
-- Keep a copy of `Magisk.apk` inside the `hpesuperpower` folder for patching.
 - Keep APKs you want to install inside `apks/` for organization.
-- You can still install APKs from any path with `adb install`.
+- You can still install APKs from any path with `adb install` apk path.
 
 ![Folder structure](assets/screenshots/screenshot2.png)
 
